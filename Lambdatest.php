@@ -14,6 +14,10 @@
 
 require 'vendor/autoload.php';
 
+use Facebook\WebDriver\Remote\DesiredCapabilities;
+use Facebook\WebDriver\Remote\RemoteWebDriver;
+use Facebook\WebDriver\WebDriverBy;
+
 class LambdaTest{
 
   /*
@@ -37,8 +41,8 @@ class LambdaTest{
     $LT_BROWSER_VERSION ="63.0";
     $LT_PLATFORM = "windows 10";
     
-    # URL: https://{username}:{accessToken}@beta-hub.lambdatest.com/wd/hub
-    $url = "https://". $LT_USERNAME .":" . $LT_APPKEY ."@beta-hub.lambdatest.com/wd/hub";		
+    # URL: https://{username}:{accessToken}@hub.lambdatest.com/wd/hub
+    $url = "https://". $LT_USERNAME .":" . $LT_APPKEY ."@hub.lambdatest.com/wd/hub";			
     
     # setting desired capabilities for the test
     $desired_capabilities = new DesiredCapabilities();
