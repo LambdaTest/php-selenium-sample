@@ -28,51 +28,58 @@ class LambdaTest{
 
   public function searchTextOnGoogle() {
     # username: Username can be found at automation dashboard		
-    $LT_USERNAME = "{username}";
+    $LT_USERNAME = "<username>";
     
     # accessKey:  AccessKey can be generated from automation dashboard or profile section
-    $LT_APPKEY = "{accessKey}";
+    $LT_APPKEY = "<access key>";
 
     $LT_BROWSER = "chrome";
     $LT_BROWSER_VERSION ="63.0";
     $LT_PLATFORM = "windows 10";
     
-    # URL: https://{username}:{accessToken}@beta-hub.lambdatest.com/wd/hub
-    $url = "https://". $LT_USERNAME .":" . $LT_APPKEY ."@beta-hub.lambdatest.com/wd/hub";		
+    # URL: https://{username}:{accessToken}@hub.lambdatest.com/wd/hub
+    $url = "https://". $LT_USERNAME .":" . $LT_APPKEY ."@hub.lambdatest.com/wd/hub";		
     
     # setting desired capabilities for the test
-    $desired_capabilities = new DesiredCapabilities();
-		$desired_capabilities->setCapability('browserName',$LT_BROWSER);
-		$desired_capabilities->setCapability('version', $LT_BROWSER_VERSION);
-		$desired_capabilities->setCapability('platform', $LT_PLATFORM);
-		$desired_capabilities->setCapability('name', "Php");
-		$desired_capabilities->setCapability('build', "Php Build");
-		$desired_capabilities->setCapability('network', true);
-		$desired_capabilities->setCapability('visual', true);
-		$desired_capabilities->setCapability('video ', true);
-		$desired_capabilities->setCapability('console', true);
     
-    /*
-        Setup remote driver
-        Params
-        ----------
-        Execute test:  navigate google.com search LambdaTest
-        Result
-        -------
-        print title
-    */
-		self::$driver = RemoteWebDriver::create($url, $desired_capabilities); 		
-				
-    self::$driver->get("https://www.google.com/ncr");
-
-		$element = self::$driver->findElement(WebDriverBy::name("q"));
-    if($element) {
-      $element->sendKeys("LambdaTest");
-      $element->submit();
+    try{
+      $desired_capabilities = new DesiredCapabilities();
+      $desired_capabilities->setCapability('browserName',$LT_BROWSER);
+      $desired_capabilities->setCapability('version', $LT_BROWSER_VERSION);
+      $desired_capabilities->setCapability('platform', $LT_PLATFORM);
+      $desired_capabilities->setCapability('name', "Php");
+      $desired_capabilities->setCapability('build', "Php Build");
+      $desired_capabilities->setCapability('network', true);
+      $desired_capabilities->setCapability('visual', true);
+      $desired_capabilities->setCapability('video ', true);
+      $desired_capabilities->setCapability('console', true);
+      
+      /*
+          Setup remote driver
+          Params
+          ----------
+          Execute test:  navigate google.com search LambdaTest
+          Result
+          -------
+          print title
+      */
+      self::$driver = RemoteWebDriver::create($url, $desired_capabilities); 
+          
+      self::$driver->get("https://www.google.com/ncr");
+  
+      $element = self::$driver->findElement(WebDriverBy::name("q"));
+      if($element) {
+        $element->sendKeys("LambdaTest");
+        $element->submit();
+      }
+      
+      print self::$driver->getTitle();
+    }catch(Exception $e){
+      echo  "Test failed with reason ".$e->getMessage();
+    }finally{
+      // finally quit the driver
+      self::$driver->quit();
     }
-    
-    print self::$driver->getTitle();
-    self::$driver->quit();
   }		
 }
 
