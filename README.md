@@ -1,4 +1,4 @@
-## PHP Automation Lambdatest
+# PHP Automation Lambdatest
 
 PHP selenium automation sample test for Lambdatest Cloud GRID.
 
