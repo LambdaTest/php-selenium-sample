@@ -49,10 +49,10 @@ class LambdaTest{
       $desired_capabilities->setCapability('platform', $LT_PLATFORM);
       $desired_capabilities->setCapability('name', "Php");
       $desired_capabilities->setCapability('build', "Php Build");
-      $desired_capabilities->setCapability('network', true);
-      $desired_capabilities->setCapability('visual', true);
+      $desired_capabilities->setCapability('network', false);
+      $desired_capabilities->setCapability('visual', false);
       $desired_capabilities->setCapability('video ', true);
-      $desired_capabilities->setCapability('console', true);
+      $desired_capabilities->setCapability('console', false);
       
       /*
           Setup remote driver
