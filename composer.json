@@ -1,6 +1,6 @@
 {
   "require": {
     "phpunit/phpunit-selenium": "*",
-    "facebook/webdriver": "dev-master"
-  }  
+    "php-webdriver/webdriver": "^1.9.0"
+  }
 }
