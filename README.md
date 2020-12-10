@@ -30,16 +30,29 @@ php -r "unlink('composer-setup.php');"
 composer install
 ```
 
+### Lambdatest Credentials
 
+- Set LambdaTest username and access key in environment variables. It can be obtained from LambdaTest dashboard
+
+For Linux/Mac
+```
+export LT_USERNAME="YOUR_USERNAME"
+export LT_ACCESS_KEY="YOUR ACCESS KEY"
+```
+For Windows
+```
+set LT_USERNAME="YOUR_USERNAME"
+set LT_ACCESS_KEY="YOUR ACCESS KEY"
+```
 ### Configuring Test
 - Replace {username} with your username 
-- Replace {accessToken}  with your username 
+- Replace {accessToken}  with your accessKey 
 - List of supported platfrom, browser, version can be found at https://www.lambdatest.com/capabilities-generator/
 
 
 ### Executing Test
 ```bash
-vendor/bin/phpunit Lambdatest.php
+php Lambdatest.php
 ```
 
 ## About LambdaTest
