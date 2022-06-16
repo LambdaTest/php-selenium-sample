@@ -20,7 +20,7 @@
 
 *Learn how to run your PHP automation testing scripts on the LambdaTest platform*
 
-[<img height="58" width="200" src="https://user-images.githubusercontent.com/70570645/171866795-52c11b49-0728-4229-b073-4b704209ddde.png">](https://accounts.lambdatest.com/register)
+[<img height="58" width="200" src="https://user-images.githubusercontent.com/70570645/171866795-52c11b49-0728-4229-b073-4b704209ddde.png">](https://accounts.lambdatest.com/register?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
 
 
 ## Table Of Contents
@@ -67,7 +67,7 @@ composer install
 
 ### Setting Up Your Authentication
 
-Make sure you have your LambdaTest credentials with you to run test automation scripts on LambdaTest Selenium Grid. You can obtain these credentials from the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/build) or through [LambdaTest Profile](https://accounts.lambdatest.com/login).
+Make sure you have your LambdaTest credentials with you to run test automation scripts on LambdaTest Selenium Grid. You can obtain these credentials from the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/build?utm_source=github&utm_medium=repo&utm_campaign=php-selenium) or through [LambdaTest Profile](https://accounts.lambdatest.com/login?utm_source=github&utm_medium=repo&utm_campaign=php-selenium).
 
 **Step 3:** Set LambdaTest `Username` and `Access Key` in environment variables.
   * For **Linux/macOS**:
@@ -104,7 +104,7 @@ $capabilities = array(
     "firefox.driver" => v0.23.0
     )
 ```
-You can generate capabilities for your test requirements with the help of our inbuilt [Desired Capability Generator](https://www.lambdatest.com/capabilities-generator/).
+You can generate capabilities for your test requirements with the help of our inbuilt [Desired Capability Generator](https://www.lambdatest.com/capabilities-generator/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium).
 
 
 ### Executing the Test
@@ -114,13 +114,13 @@ You can generate capabilities for your test requirements with the help of our in
 ```bash
 php tests/LambdaTest.php
 ```
-Your test results would be displayed on the test console (or command-line interface if you are using terminal/cmd) and on [LambdaTest automation dashboard](https://automation.lambdatest.com/build). 
+Your test results would be displayed on the test console (or command-line interface if you are using terminal/cmd) and on LambdaTest automation dashboard. 
 
 ## Testing Locally Hosted Or Privately Hosted Projects
 
 You can test your locally hosted or privately hosted projects with LambdaTest Selenium grid using LambdaTest Tunnel. All you would have to do is set up an SSH tunnel using tunnel and pass toggle `tunnel = True` via desired capabilities. LambdaTest Tunnel establishes a secure SSH protocol based tunnel that allows you in testing your locally hosted or privately hosted pages, even before they are live.
 
-Refer our [LambdaTest Tunnel documentation](https://www.lambdatest.com/support/docs/testing-locally-hosted-pages/) for more information.
+Refer our [LambdaTest Tunnel documentation](https://www.lambdatest.com/support/docs/testing-locally-hosted-pages/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium) for more information.
 
 Here’s how you can establish LambdaTest Tunnel.
 
@@ -153,16 +153,16 @@ Once you are able to connect **LambdaTest Tunnel** successfully, you would just 
 
 Check out our latest tutorials on PHP automation testing 👇
 
-* [10 of the Best PHP Testing Frameworks for 2021](https://www.lambdatest.com/blog/best-php-testing-frameworks-2021/)
-* [Getting Started With Selenium PHP For Automation Testing](https://www.lambdatest.com/blog/selenium-php-tutorial/)
-* [Web automation testing using Selenium PHP on cloud-based Selenium Grid](https://www.lambdatest.com/blog/selenium-php-tutorial)
-* [Handling Multiple Browser Windows and Tabs in Selenium PHP](https://www.lambdatest.com/blog/handling-windows-in-selenium-with-php/)
-* [How to Work with Tables in Selenium PHP?](https://www.lambdatest.com/blog/tables-in-selenium-php/)
-* [How To Open IE and Edge Browsers In Selenium WebDriver Using PHP](https://www.lambdatest.com/blog/open-ie-and-edge-browser-in-selenium-webdriver-using-php/)
-* [How to Handle Synchronization in Selenium PHP Using Implicit and Explicit Wait?](https://www.lambdatest.com/blog/implicit-explicit-wait-in-selenium/)
-* [How to Execute JavaScript in Selenium PHP?](https://www.lambdatest.com/blog/executing-javascript-in-selenium-php/)
-* [How to Generate PHPUnit Coverage Report in HTML and XML?](https://www.lambdatest.com/blog/phpunit-code-coverage-report-html/)
-* [How to Setup CI/CD Pipeline with Bamboo for PHP Projects?](https://www.lambdatest.com/blog/how-to-setup-cicd-pipeline-with-bamboo-for-php-projects/)
+* [10 of the Best PHP Testing Frameworks for 2021](https://www.lambdatest.com/blog/best-php-testing-frameworks-2021/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
+* [Getting Started With Selenium PHP For Automation Testing](https://www.lambdatest.com/blog/selenium-php-tutorial/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
+* [Web automation testing using Selenium PHP on cloud-based Selenium Grid](https://www.lambdatest.com/blog/selenium-php-tutorial/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
+* [Handling Multiple Browser Windows and Tabs in Selenium PHP](https://www.lambdatest.com/blog/handling-windows-in-selenium-with-php/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
+* [How to Work with Tables in Selenium PHP?](https://www.lambdatest.com/blog/tables-in-selenium-php/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
+* [How To Open IE and Edge Browsers In Selenium WebDriver Using PHP](https://www.lambdatest.com/blog/open-ie-and-edge-browser-in-selenium-webdriver-using-php/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
+* [How to Handle Synchronization in Selenium PHP Using Implicit and Explicit Wait?](https://www.lambdatest.com/blog/implicit-explicit-wait-in-selenium/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
+* [How to Execute JavaScript in Selenium PHP?](https://www.lambdatest.com/blog/executing-javascript-in-selenium-php/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
+* [How to Generate PHPUnit Coverage Report in HTML and XML?](https://www.lambdatest.com/blog/phpunit-code-coverage-report-html/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
+* [How to Setup CI/CD Pipeline with Bamboo for PHP Projects?](https://www.lambdatest.com/blog/how-to-setup-cicd-pipeline-with-bamboo-for-php-projects/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
 
 
 ## Documentation & Resources :books:
@@ -176,7 +176,7 @@ Visit the following links to learn more about LambdaTest's features, setup and t
 
 ## LambdaTest Community :busts_in_silhouette:
 
-The [LambdaTest Community](https://community.lambdatest.com/) allows people to interact with tech enthusiasts. Connect, ask questions, and learn from tech-savvy people. Discuss best practises in web development, testing, and DevOps with professionals from across the globe 🌎
+The [LambdaTest Community](https://community.lambdatest.com/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium) allows people to interact with tech enthusiasts. Connect, ask questions, and learn from tech-savvy people. Discuss best practises in web development, testing, and DevOps with professionals from across the globe 🌎
 
 ## What's New At LambdaTest ❓
 
@@ -202,11 +202,11 @@ To stay updated with the latest features and product add-ons, visit [Changelog](
 * LT Browser - for responsive testing across 50+ pre-installed mobile, tablets, desktop, and laptop viewports
 
     
-[<img height="58" width="200" src="https://user-images.githubusercontent.com/70570645/171866795-52c11b49-0728-4229-b073-4b704209ddde.png">](https://accounts.lambdatest.com/register)
+[<img height="58" width="200" src="https://user-images.githubusercontent.com/70570645/171866795-52c11b49-0728-4229-b073-4b704209ddde.png">](https://accounts.lambdatest.com/register?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
 
 
       
 ## We are here to help you :headphones:
 
-* Got a query? we are available 24x7 to help. [Contact Us](support@lambdatest.com)
+* Got a query? we are available 24x7 to help. [Contact Us](mailto:support@lambdatest.com)
 * For more info, visit - [LambdaTest](https://www.lambdatest.com/?utm_source=github&utm_medium=repo&utm_campaign=php-selenium)
