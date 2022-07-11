@@ -57,7 +57,7 @@ Before you begin automation testing with Selenium, you would need to:
 **Step 1:** Clone the LambdaTest’s Php-Selenium repository and navigate to the code directory as shown below:
 
 ```bash
-git clone https://github.com/LambdaTest-sample-test-frameworks/Php-Selenium
+git clone https://github.com/LambdaTest/php-selenium-sample
 cd Php-Selenium
 ```
 **Step 2:** Install the composer dependencies in the current project directory using the command below:
