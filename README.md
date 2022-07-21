@@ -112,7 +112,7 @@ You can generate capabilities for your test requirements with the help of our in
 **Step 5:** The tests can be executed in the terminal using the following command:
 
 ```bash
-php tests/LambdaTest.php
+php Lambdatest.php
 ```
 Your test results would be displayed on the test console (or command-line interface if you are using terminal/cmd) and on LambdaTest automation dashboard. 
 
