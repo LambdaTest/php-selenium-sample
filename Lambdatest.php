@@ -35,7 +35,7 @@ use PHPUnit\Framework\Assert;
 		"name" => "Sample PHP Test",
 		"platform" => "Windows 10",
 		"browserName" => "Chrome",
-		"version" => "88.0"
+		"version" => "142.0"
      );
      
       try{
